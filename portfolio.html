@@ -1,0 +1,358 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portfolio - Growth Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e2e7ff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dde1ff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#737688",
+                    "inverse-on-surface": "#eef0ff",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#dae2fd",
+                    "secondary-container": "#5cfd80",
+                    "surface-container-low": "#f2f3ff",
+                    "on-error": "#ffffff",
+                    "surface": "#faf8ff",
+                    "surface-container": "#eaedff",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-container": "#dfe3ff",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#001452",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-surface-variant": "#434656",
+                    "surface-dim": "#d2d9f4",
+                    "on-secondary-container": "#00732c",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-bright": "#faf8ff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "on-secondary-fixed-variant": "#00531e",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "surface-tint": "#004ced",
+                    "background": "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#283044",
+                    "secondary-fixed": "#69ff87",
+                    "secondary-fixed-dim": "#3ce36a",
+                    "on-secondary-fixed": "#002108",
+                    "surface-container-highest": "#dae2fd",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#0038b6",
+                    "secondary": "#006e2a",
+                    "on-tertiary-container": "#ffdfbe",
+                    "on-background": "#131b2e",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "primary-container": "#0052ff",
+                    "tertiary": "#6f4500",
+                    "primary": "#003ec7",
+                    "on-surface": "#131b2e",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b7c4ff",
+                    "tertiary-container": "#905a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-lg-mobile": [
+                            "Montserrat"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+        }
+        .nav-backdrop {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl dark:bg-background/80 shadow-sm nav-backdrop transition-all duration-300 ease-in-out">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">Growth Partner</a>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md font-medium transition-colors duration-300" href="index.html">Home</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md font-medium transition-colors duration-300" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md font-medium transition-colors duration-300" href="services.html">Services</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-body-md text-body-md font-medium transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md font-medium transition-colors duration-300" href="packages.html">Packages</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary font-body-md text-body-md font-medium transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center px-6 py-2 bg-[#006e2c] text-white font-medium rounded-lg hover:bg-[#005220] transition-colors min-h-[48px]" href="contact.html">
+                Request Audit
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Header Section -->
+<header class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-20 md:py-32 text-center">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-6 text-on-surface">Our Digital Footprint</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            A curated selection of high-performance digital solutions engineered for modern growth. We transform complex problems into elegant, scalable digital realities.
+        </p>
+</header>
+<!-- Portfolio Grid -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Project 1 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A clean, modern corporate dashboard interface shown on a sleek laptop screen. The UI features crisp typography, subtle blue data visualizations against a crisp white background. High-key lighting emphasizes the premium, professional quality of the digital product within a minimalist office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa8oLQKfGSrKevno8Gy8q1-S-Yb9nqqwCWZXWoa6g9aL4OfQTkyXVupq9mlQ6lWvIVasjMkOhkH3MnaF6iKjxH6JfHfPYYoDNt_HvwmMh_eLfab-Eg5T3v6gtbU55CtFLL72HIwpKrsvSnIwkEgRyc7p7Ce7KPUdwuPI83VK2ADkdcXYVX7ZBmqxx8Dpcm9D4hrlyutcnVSYCCrf5-fJvV8lRDods7cj2S4PZwrn3-9QGgBtN3D6bmfA">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">SaaS</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">Nexus Intel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        A comprehensive data intelligence platform delivering real-time strategic insights for enterprise decision-makers.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://nexusintelsample.netlify.app/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="An immersive 3D web experience displayed on a high-resolution monitor. The screen shows abstract geometric structures in vibrant, corporate-approved hues of deep blue and crisp white, creating a sense of deep spatial depth and modern technological advancement in a clean studio environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUtEsuMrWTHRlutpgudwAAXPMYGRXV4OV8uykjDAvP6KE5VrMBUvITzVkB1VI6qL4BMzmIvpK00F5PhwovZwF4CB8S9b-29ge6nB9CNubi4inPWEt6nRoD5z4p-A-W3rbF3HsXePkyzHBrMXEctWqe3OjgOdz3myPWdgNla_xqiq7SzGWIQItgpiexP7Y8Ldfsb42xZiCxWEwySeZUEgqt7aC76zB-S6aiwoqHHFfEvj-4Y5FaehRqg">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">WebGL</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Interactive</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">3D Web Spectrum</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        An avant-garde immersive brand experience leveraging advanced WebGL technologies for unprecedented user engagement.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://3dwebsepeint.vercel.app/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sleek, minimalist personal developer portfolio displayed on a tablet device. The design features stark contrast with stark white backgrounds, bold dark typography, and vibrant secondary color accents. The aesthetic is clean, engineered, and highly professional, reflecting senior-level expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgEtmk5-45ZqCP_XyE3w0vRXEDxMsDWuTKsVB5fhva52Q9oZMAjqdb9KV4rIyC3pPFoeyRz71TcNziMnxMZ62R50sREnSVrkJtp68EUiKOqjE58ALuyD-HGRbVYmu6OK-P4BTF9BTtoWArBLQRZPHcSgRR2xFtJswbKaKGUwRuGLIT4kbA4jblgqPcLPJRjg9PaXhDfLfEjeDcQzuU6I37wySvo3A8keN2XK0VqftvgkseYuPRhyMxLA">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Portfolio</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">UI/UX</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">DevKumar Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        A high-velocity personal brand platform designed to showcase technical prowess and thought leadership in software engineering.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://devkumarportfoli.vercel.app/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project 4 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated e-commerce interface shown on a modern smartphone screen. The layout uses generous whitespace, elegant serif and sans-serif typography pairings, and high-quality product imagery against clean white backgrounds. The mood is premium, refined, and conversion-focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4uZ4PQfVny3m3lJzfpmDiYf8iuP-wU5IojVbJQJLlFGcfoY4BOPWMfdsJJPRSsI5-ZCfvpUoT4YJMwehWEDtmWgO5kdnlQKGSkKSo4r1l02f1cKSMoX7LkJNV2p1iNNaxh23RPJGCSEAr_j_JEzSbZRqUXFubtMEizzIsqYUdza63Dy_limcMbqmfXvUyZzzkcqNMxdO6PPZjjmU5m9rFP2vRtrQO3WY7hJ5vd7tVDWHtPofqOhDDnA">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">E-Commerce</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Retail</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">Aditi's Boutique</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        A frictionless digital storefront optimizing the path to purchase with an elegant, brand-centric design language.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://aditis.vercel.app/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project 5 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A creative professional's digital portfolio displayed across multiple devices (desktop and mobile). The design language is characterized by expansive whitespace, stark black and white contrasts, and strategic use of negative space to frame visual case studies. It exudes institutional reliability and modern agility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPuQ_B5xj7RMR1F7rUW4lOm2tgugfQCpCU-K1vA_ZaxylVM6xIOQrLQFotL04gOqHB87XTxjecMbcAvoek8rqfKtQZDbU_ZQrEWUHdzWh-XzY4DRRFoN4pFRT6ZzN40Ix0WwlItqAiIRw4jvSKLbmyD5f9xu11KOpSCRVzTzFukOooYRwtvj3_XtBrLO3ZHxoowD2HD7TVfrDhjXUg4n5Lu02_2-4d9Of_Vvm9CDDGdKe5g4mTQhPQIA">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Creative</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Branding</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">The Aditya Portfolio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        A visually arresting digital canvas that effectively communicates creative vision and past project successes.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://theadityaportfolio.netlify.app/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project 6 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover-lift overflow-hidden flex flex-col">
+<div class="h-64 bg-surface-container-high w-full relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="An educational platform interface shown on a large desktop monitor. The design utilizes a strict grid system, clear typography hierarchy, and a calm, authoritative blue color palette on a white surface. The layout feels structured, accessible, and highly professional, typical of a top-tier digital academy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXfY5-6tCz5D0yCzhhfzio6zZMc3kLYm4mXn5G-x8V0T-PSSsyoi1W7ZkeBdvT8_YDqp0WMIyXnu0EvNtafullUyx4lj7dvpXO6QVnqf-8opRNrWznbH-lUNUTnLMHSYiHwh59T0qQ3z0sHjY3Wvlf1gXs0SAL5z7CGCdjndejkz1FiKUieuBWNlIvFQvCcWmOd6u_s7LPcn7POV2_YSR-Pxiv_FYDDAb0BX5f6ibV_wjYq1oP0iJ0Qw">
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">EdTech</span>
+<span class="bg-primary-fixed text-primary font-label-md text-xs px-3 py-1 rounded-full bg-opacity-30">Platform</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3 text-on-surface">Creators College</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        A scalable e-learning ecosystem designed to facilitate intuitive knowledge transfer and community engagement.
+                    </p>
+<a class="inline-flex items-center justify-center w-full px-6 py-3 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary hover:text-white transition-colors min-h-[48px]" href="https://www.creatorscollege.in/" rel="noopener noreferrer" target="_blank">
+                        Visit Website
+                        <span class="material-symbols-outlined ml-2 text-sm">open_in_new</span>
+</a>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<span class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">Growth Partner</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">
+                    © 2024 Growth Partner. All rights reserved. Deoghar, Jharkhand.
+                </p>
+</div>
+<!-- Links Col 1 -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="services.html">Services</a>
+</div>
+<!-- Links Col 2 -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-primary font-bold hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="portfolio.html">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="about.html#industries">Industries</a>
+</div>
+<!-- Links Col 3 -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="contact.html">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Terms</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>

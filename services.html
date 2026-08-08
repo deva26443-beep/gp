@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - Growth Partner</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e2e7ff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dde1ff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#737688",
+                    "inverse-on-surface": "#eef0ff",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#dae2fd",
+                    "secondary-container": "#5cfd80",
+                    "surface-container-low": "#f2f3ff",
+                    "on-error": "#ffffff",
+                    "surface": "#faf8ff",
+                    "surface-container": "#eaedff",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-container": "#dfe3ff",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#001452",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-surface-variant": "#434656",
+                    "surface-dim": "#d2d9f4",
+                    "on-secondary-container": "#00732c",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-bright": "#faf8ff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "on-secondary-fixed-variant": "#00531e",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "surface-tint": "#004ced",
+                    "background": "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#283044",
+                    "secondary-fixed": "#69ff87",
+                    "secondary-fixed-dim": "#3ce36a",
+                    "on-secondary-fixed": "#002108",
+                    "surface-container-highest": "#dae2fd",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#0038b6",
+                    "secondary": "#006e2a",
+                    "on-tertiary-container": "#ffdfbe",
+                    "on-background": "#131b2e",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "primary-container": "#0052ff",
+                    "tertiary": "#6f4500",
+                    "primary": "#003ec7",
+                    "on-surface": "#131b2e",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b7c4ff",
+                    "tertiary-container": "#905a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .ambient-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+        .ambient-shadow-hover:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-all duration-300 ease-in-out border-none">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight" href="#">Growth Partner</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="font-body-md text-body-md font-bold text-primary border-b-2 border-primary py-1 transition-colors duration-300" href="services.html">Services</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</nav>
+<button class="hidden md:flex bg-secondary text-on-secondary hover:bg-secondary/90 h-[48px] px-6 rounded-full font-label-md text-label-md items-center justify-center transition-all shadow-sm" onclick="window.location='contact.html'">
+                Request Audit
+            </button>
+<!-- Mobile Menu Icon (Visual Only) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-[140px]">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-section-gap relative overflow-hidden py-section-gap"><div class="absolute inset-0 z-0">
+<img alt="Business Growth Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLujx6NI3UO1RQGqC2oB0LwV-5YxNO1B_cnIRf8zSNnZaGQX_JbG-J3O546A5nXRT2KnNARIL8edl8fUBNxqZkDTgwWWlIEOF4merVjpZr2g9-YTXgxiaLnEGb83RYBLVIPuMbJD4FqBUDGnBIQA-o8CbR42axJP_XFFFSdp2t_rk1ARBTtQwY3_woytt67S9xgR9zmsvOoN5JiamH7qC_rhrBbX2HbaV-dktyyZPBmG-eSCic93PSzNG5Q"/>
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-white mb-6">Comprehensive Growth Solutions.</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">
+    We deliver high-impact digital strategies designed for scalability. From architecture to acquisition, our integrated services build robust systems for established businesses and high-velocity startups.
+  </p>
+</div></section>
+<!-- Services Grid Section -->
+<section class="py-section-gap bg-surface-container-low/70">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Core Capabilities</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Our expertise spans nine distinct disciplines, orchestrated to operate as a single growth engine for your organization.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>code</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Website Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">High-performance, secure, and scalable web architectures built for conversion.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">E-commerce</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Corporate</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Landing Pages</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>campaign</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Ads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Data-driven performance marketing campaigns designed to maximize ROI across networks.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Google Ads</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Meta Ads</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">LinkedIn</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>dns</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Software</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Custom software solutions engineered to streamline operations and enhance user experience.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Custom CRM</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">SaaS Products</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Mobile Apps</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>travel_explore</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">SEO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Strategic search engine optimization to build sustainable, long-term organic visibility.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Technical</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">On-Page</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Off-Page</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>edit_document</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Content</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Compelling narratives and visual assets that resonate with your target audience.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Copywriting</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Video Prod</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Graphic Design</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>diamond</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Branding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Identity systems that establish authority and differentiate your position in the market.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Identity Design</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Strategy</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Guidelines</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 7 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>smart_toy</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Automation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Workflow automation to eliminate redundancy and increase operational efficiency.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Integrations</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Email Sequences</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Workflows</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 8 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>storefront</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Presence Mgmt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Active management of your digital footprint to ensure consistency and reputation.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">GMB</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Social Media</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Reviews</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 9 -->
+<div class="bg-surface-container-lowest rounded-2xl p-[32px] flex flex-col gap-6 ambient-shadow ambient-shadow-hover transition-all duration-300 border border-outline-variant/20">
+<div class="h-12 w-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>forum</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Executive-level guidance to align digital initiatives with overarching business goals.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Strategy</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Audits</span>
+<span class="bg-surface-container text-primary px-3 py-1 rounded-full font-label-md text-label-md opacity-80">Roadmapping</span>
+</div>
+</div>
+<a class="mt-auto self-start text-primary font-label-md text-label-md flex items-center gap-1 hover:text-secondary transition-colors group" href="#">
+                            Learn More <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">How We Work</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A systematic, transparent six-step methodology ensures predictable outcomes and seamless execution from concept to deployment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">1</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Discovery Call</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We align on your goals, current bottlenecks, and evaluate if our expertise matches your requirements.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">2</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Proposal</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A tailored strategic roadmap detailing scope, deliverables, timelines, and precise investment requirements.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">3</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Kickoff</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We onboard your team, establish communication channels, and gather necessary assets to begin.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">4</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Execution</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our specialists deploy the strategy with regular milestone updates and transparent progress reporting.</p>
+</div>
+<!-- Step 5 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">5</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Review</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive quality assurance and collaborative review sessions to ensure alignment with expectations.</p>
+</div>
+<!-- Step 6 -->
+<div class="relative p-8 rounded-2xl border border-outline-variant/30 bg-surface">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-headline-md text-headline-md shadow-md">6</div>
+<h4 class="font-headline-md text-headline-md text-primary mt-4 mb-2">Support</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Ongoing optimization, maintenance, and proactive scaling strategies post-deployment.</p>
+</div>
+</div>
+</section>
+<!-- Commitment Section -->
+<section class="bg-primary text-on-primary py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-6">Our Commitment</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-8">
+                        We view ourselves as an extension of your team. Our operating principles are designed to eliminate friction and ensure a high-trust, high-performance partnership.
+                    </p>
+<button class="bg-secondary text-on-secondary hover:bg-secondary-fixed h-[48px] px-8 rounded-full font-label-md text-label-md items-center justify-center transition-all shadow-sm" onclick="window.location='contact.html'">
+                        Start the Conversation
+                    </button>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="mt-1 h-8 w-8 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-1 text-[20px]">Transparent Communication</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim">Direct access to project leads and regular, unvarnished reporting on metrics that matter.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="mt-1 h-8 w-8 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-1 text-[20px]">On-Time Delivery</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim">Strict adherence to established timelines, supported by robust project management protocols.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="mt-1 h-8 w-8 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-1 text-[20px]">Data-Driven Decisions</h4>
+<p class="font-body-md text-body-md text-primary-fixed-dim">Every strategy is backed by analytics, removing guesswork and focusing on provable ROI.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-section-gap transition-opacity opacity-100 hover:opacity-80">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<a class="font-display-lg text-headline-md font-bold text-primary mb-4 block" href="#">Growth Partner</a>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">
+                    Elevating brands through strategic digital engineering and performance design.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-primary mb-2 uppercase tracking-wider">Company</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About</a>
+<a class="font-body-md text-body-md text-primary font-bold hover:text-secondary transition-colors" href="services.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="portfolio.html">Portfolio</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-primary mb-2 uppercase tracking-wider">Solutions</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="about.html#industries">Industries</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-primary mb-2 uppercase tracking-wider">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span> Instagram
+                </a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/30 flex justify-between items-center flex-wrap gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Growth Partner. All rights reserved. Deoghar, Jharkhand.</p>
+</div>
+</div>
+</footer>
+</body></html>

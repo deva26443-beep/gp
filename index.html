@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Growth Partner - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e2e7ff",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#dde1ff",
+                      "on-secondary": "#ffffff",
+                      "outline": "#737688",
+                      "inverse-on-surface": "#eef0ff",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#dae2fd",
+                      "secondary-container": "#5cfd80",
+                      "surface-container-low": "#f2f3ff",
+                      "on-error": "#ffffff",
+                      "surface": "#faf8ff",
+                      "surface-container": "#eaedff",
+                      "outline-variant": "#c3c5d9",
+                      "on-primary-container": "#dfe3ff",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#001452",
+                      "on-tertiary-fixed": "#2a1700",
+                      "on-surface-variant": "#434656",
+                      "surface-dim": "#d2d9f4",
+                      "on-secondary-container": "#00732c",
+                      "tertiary-fixed": "#ffddb8",
+                      "surface-bright": "#faf8ff",
+                      "primary-fixed-dim": "#b7c4ff",
+                      "on-secondary-fixed-variant": "#00531e",
+                      "tertiary-fixed-dim": "#ffb95f",
+                      "surface-tint": "#004ced",
+                      "background": "#faf8ff",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#283044",
+                      "secondary-fixed": "#69ff87",
+                      "secondary-fixed-dim": "#3ce36a",
+                      "on-secondary-fixed": "#002108",
+                      "surface-container-highest": "#dae2fd",
+                      "error": "#ba1a1a",
+                      "on-primary-fixed-variant": "#0038b6",
+                      "secondary": "#006e2a",
+                      "on-tertiary-container": "#ffdfbe",
+                      "on-background": "#131b2e",
+                      "on-tertiary-fixed-variant": "#653e00",
+                      "primary-container": "#0052ff",
+                      "tertiary": "#6f4500",
+                      "primary": "#003ec7",
+                      "on-surface": "#131b2e",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#b7c4ff",
+                      "tertiary-container": "#905a00",
+                      "accent": "#F59E0B"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "2xl": "1rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "section-gap": "120px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Montserrat", "sans-serif"],
+                      "label-md": ["Inter", "sans-serif"],
+                      "headline-md": ["Montserrat", "sans-serif"],
+                      "body-md": ["Inter", "sans-serif"],
+                      "headline-lg": ["Montserrat", "sans-serif"],
+                      "body-lg": ["Inter", "sans-serif"],
+                      "headline-lg-mobile": ["Montserrat", "sans-serif"]
+              },
+              "fontSize": {
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .ambient-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 40px -12px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-all duration-300 ease-in-out">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20 relative z-50">
+<!-- Brand -->
+<a class="font-display-lg text-headline-md font-bold text-primary flex items-center gap-2 tracking-tight" href="index.html">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+                Growth Partner
+            </a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-bold text-primary border-b-2 border-primary py-2" href="index.html">Home</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">About</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="inline-flex items-center justify-center bg-secondary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:opacity-80 transition-colors hover-lift h-12" href="contact.html">Request Audit</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant p-2 hover:text-primary transition-colors focus:outline-none" id="mobile-menu-btn">
+<span class="material-symbols-outlined transition-transform duration-300" data-icon="menu" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<!-- Mobile Nav Overlay -->
+<div class="fixed inset-0 bg-surface z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-24 px-margin-mobile pb-8 overflow-y-auto" id="mobile-nav-overlay">
+<div class="flex flex-col gap-6 w-full text-center mt-4">
+<a class="font-display-lg text-headline-md font-bold text-primary" href="index.html">Home</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="portfolio.html">Portfolio</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="packages.html">Packages</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+<div class="pt-6 mt-2 border-t border-outline-variant/30 w-full flex justify-center">
+<a class="inline-flex items-center justify-center bg-secondary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:opacity-80 transition-colors h-14 w-full max-w-xs" href="contact.html">Request Audit</a>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<!-- Background Image -->
+<div class="fixed inset-0 z-0"><img alt="Professional business growth background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALTGQfzoJniIwJycAuOFT9upfT0iaHuQVrG0hw2W3umZCrELUnApimQK1KSCUvefzgSl7V6pCTyfW9jTToo-iUHBwPTM6ZWSOBoeXlAS9WRCOdGzjG4SdGVHOAaPzG34_l1oVVOeS4oh6VAu_B1JCuz0cVYgHjYdH6lD8YlT0oE1eNcV4VYtR231TqiuWj_cxl7v-pH_qm2CEaQSVwG5X4J58wM70pvrrHWYgrj0Iu3mu64wcx_SPd1xNgCstj3mENp_nAq1emfSpOV64"/><div class="absolute inset-0 bg-on-background/40 z-10"></div></div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full py-section-gap">
+<div class="max-w-3xl grid gap-8 bg-surface/90 backdrop-blur-sm p-8 rounded-2xl">
+<!-- Chip -->
+<div class="inline-flex items-center gap-2 bg-primary-fixed-dim/30 text-on-primary-fixed font-label-md text-label-md px-4 py-1.5 rounded-full w-fit">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                        Strategic Growth Partner
+                    </div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-background">
+                        Grow your business with better websites, marketing, branding, and automation.
+                    </h1>
+<div class="font-body-lg text-body-lg text-on-surface-variant flex flex-wrap gap-4 items-center">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-outline" data-icon="language">language</span> Websites</span> <span class="text-outline-variant hidden sm:inline">|</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-outline" data-icon="smartphone">smartphone</span> Social Media</span> <span class="text-outline-variant hidden sm:inline">|</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-outline" data-icon="search">search</span> SEO</span> <span class="text-outline-variant hidden sm:inline">|</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-outline" data-icon="palette">palette</span> Branding</span> <span class="text-outline-variant hidden sm:inline">|</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-outline" data-icon="settings_b_roll">settings_b_roll</span> Automation</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="inline-flex items-center justify-center bg-accent text-on-primary font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-[#D97706] transition-colors hover-lift h-12 shadow-md" href="contact.html">
+                            Get Free Consultation
+                        </a>
+<a class="inline-flex items-center justify-center bg-transparent border-2 border-primary text-primary font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-primary-fixed/20 transition-colors h-12" href="portfolio.html">
+                            View Portfolio
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pain Points Section (Bento Grid) -->
+<section class="py-section-gap bg-surface-container-low/80 relative z-10 backdrop-blur-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
+                        Is your business losing customers?
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Many established businesses struggle to translate their real-world expertise into digital success. Are you facing these common growth barriers?
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-min">
+<!-- Point 1: Outdated Website (Large) -->
+<div class="md:col-span-2 bg-surface rounded-2xl p-8 ambient-shadow hover-lift border border-outline-variant/30 relative overflow-hidden flex flex-col justify-end min-h-[280px]">
+<div class="absolute inset-0 z-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="Abstract geometric layout representing an old, fragmented wireframe website turning into dust, conveying the concept of an outdated digital presence losing relevance. Deep corporate blues and subtle red warning tones in a minimal, modern execution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8v5Oeo99v9Eq7IiuYZb77eU84LDqpShWrwCBh8Gqk0WwQvvLaFPU1hhfaMyIH2ItBdKxpwGW6Xi6Ab_8ElWNKgSSFrGcxBV84OW04lhCUcLbwtkoA_0dyCAMRmlSvJ_s12T_NpxetBGySyEerG1G7dkYsgtxNngJtXBnRFbqY1GKTnRYmHtFtvCBU3mHRfIe149N8Fp-7L_E1f-PFdFavqIPeMtm0OeQvquhZz7evRNgcCoXHpb3cqA"/>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="desktop_access_disabled">desktop_access_disabled</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Outdated Website</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Your digital storefront is turning potential customers away before they even speak to you.</p>
+</div>
+</div>
+<!-- Point 2: No Enquiries -->
+<div class="bg-surface rounded-2xl p-8 ambient-shadow hover-lift border border-outline-variant/30 flex flex-col min-h-[280px]">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="speaker_notes_off">speaker_notes_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">No Enquiries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Traffic without conversion is just an expense. You need qualified leads.</p>
+</div>
+<!-- Point 3: Invisible on Search -->
+<div class="bg-surface rounded-2xl p-8 ambient-shadow hover-lift border border-outline-variant/30 flex flex-col min-h-[280px]">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="visibility_off">visibility_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Invisible on Search</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">If you aren't on page one, your competitors are capturing your market share.</p>
+</div>
+<!-- Point 4: Inconsistent Branding -->
+<div class="bg-surface rounded-2xl p-8 ambient-shadow hover-lift border border-outline-variant/30 flex flex-col min-h-[280px]">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="broken_image">broken_image</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Inconsistent Brand</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Mixed messages across platforms erode trust and authority in your local market.</p>
+</div>
+<!-- Point 5: Manual Workflows -->
+<div class="bg-surface rounded-2xl p-8 ambient-shadow hover-lift border border-outline-variant/30 flex flex-col min-h-[280px]">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="hourglass_disabled">hourglass_disabled</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Manual Workflows</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Wasting hours on repetitive tasks instead of focusing on strategic business growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: Free 20-Minute Audit -->
+<section class="py-section-gap bg-surface/80 relative overflow-hidden z-10 backdrop-blur-sm" id="audit">
+<!-- Decorative bg element -->
+<div class="absolute top-0 right-0 -mr-32 -mt-32 w-[600px] h-[600px] bg-primary-fixed rounded-full blur-[120px] opacity-40 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+<div class="glass-panel rounded-2xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 ambient-shadow">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1.5 rounded-full w-fit mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
+                            No obligation
+                        </div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">
+                            Claim Your Free 20-Minute Digital Audit
+                        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-lg">
+                            We'll analyze your current digital presence, identify the exact leaks costing you customers, and provide a clear, actionable roadmap for growth.
+                        </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-background">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Website performance &amp; UX analysis
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-background">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Local SEO visibility check
+                            </li>
+<li class="flex items-center gap-3 font-body-md text-body-md text-on-background">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                Automation opportunity mapping
+                            </li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 bg-surface p-8 rounded-xl border border-outline-variant/30 ambient-shadow">
+<form id="home-audit-form" action="https://formsubmit.co/ajax/devstudent1984@gmail.com" method="POST" class="space-y-4">
+<!-- FormSubmit settings -->
+<input type="hidden" name="_subject" value="New Digital Audit Request (Home Page)!">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="name">Full Name</label>
+<input class="w-full h-12 px-4 rounded-DEFAULT border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="name" name="Full Name" placeholder="Jane Doe" required type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="url">Website URL</label>
+<input class="w-full h-12 px-4 rounded-DEFAULT border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="url" name="Website URL" placeholder="yourcompany.com" required type="url"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="email">Business Email</label>
+<input class="w-full h-12 px-4 rounded-DEFAULT border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors" id="email" name="Business Email" placeholder="jane@company.com" required type="email"/>
+</div>
+<button id="home-submit-btn" class="w-full inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-4 rounded-DEFAULT hover:bg-primary-fixed-variant transition-colors hover-lift mt-4 h-12" type="submit">
+                                Book My Audit Now
+                            </button>
+<p id="home-form-status" class="mt-2 text-center text-sm font-bold hidden"></p>
+</form>
+<script>
+  document.getElementById('home-audit-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('home-submit-btn');
+    const status = document.getElementById('home-form-status');
+    btn.innerText = 'Sending...';
+    btn.disabled = true;
+
+    fetch(this.action, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => response.json())
+    .then(data => {
+      btn.innerText = 'Book My Audit Now';
+      btn.disabled = false;
+      status.classList.remove('hidden');
+      status.className = 'mt-2 text-center text-sm font-bold text-green-700 bg-green-100 p-2 rounded';
+      status.innerText = 'Submitted successfully!';
+      this.reset();
+    })
+    .catch(error => {
+      btn.innerText = 'Book My Audit Now';
+      btn.disabled = false;
+      status.classList.remove('hidden');
+      status.className = 'mt-2 text-center text-sm font-bold text-red-700 bg-red-100 p-2 rounded';
+      status.innerText = 'Error submitting form. Try again.';
+    });
+  });
+</script>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<a class="font-display-lg text-headline-md font-bold text-primary flex items-center gap-2 tracking-tight" href="index.html">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+                    Growth Partner
+                </a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-2">
+                    Delivering assured expertise and measurable digital transformation for established businesses.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-on-background uppercase tracking-wider mb-2">Company</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="contact.html">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="#">Instagram</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-on-background uppercase tracking-wider mb-2">Expertise</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="services.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="portfolio.html">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="about.html#industries">Industries</a>
+</div>
+<!-- Legal Column -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-on-background uppercase tracking-wider mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-100 hover:opacity-80 transition-opacity w-fit" href="#">Terms</a>
+</div>
+<!-- Bottom Copyright -->
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    © 2024 Growth Partner. All rights reserved. Deoghar, Jharkhand.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+    const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+    
+    let isMenuOpen = false;
+
+    mobileMenuBtn.addEventListener('click', () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+            mobileNavOverlay.classList.remove('translate-x-full');
+            mobileMenuIcon.textContent = 'close';
+            mobileMenuIcon.setAttribute('data-icon', 'close');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileNavOverlay.classList.add('translate-x-full');
+            mobileMenuIcon.textContent = 'menu';
+            mobileMenuIcon.setAttribute('data-icon', 'menu');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close menu when clicking a link
+    const mobileLinks = mobileNavOverlay.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            isMenuOpen = false;
+            mobileNavOverlay.classList.add('translate-x-full');
+            mobileMenuIcon.textContent = 'menu';
+            mobileMenuIcon.setAttribute('data-icon', 'menu');
+            document.body.style.overflow = '';
+        });
+    });
+</script>
+</body></html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Growth Partner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e2e7ff",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dde1ff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#737688",
+                    "inverse-on-surface": "#eef0ff",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#dae2fd",
+                    "secondary-container": "#5cfd80",
+                    "surface-container-low": "#f2f3ff",
+                    "on-error": "#ffffff",
+                    "surface": "#faf8ff",
+                    "surface-container": "#eaedff",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-container": "#dfe3ff",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#001452",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-surface-variant": "#434656",
+                    "surface-dim": "#d2d9f4",
+                    "on-secondary-container": "#00732c",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-bright": "#faf8ff",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "on-secondary-fixed-variant": "#00531e",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "surface-tint": "#004ced",
+                    "background": "#faf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#283044",
+                    "secondary-fixed": "#69ff87",
+                    "secondary-fixed-dim": "#3ce36a",
+                    "on-secondary-fixed": "#002108",
+                    "surface-container-highest": "#dae2fd",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#0038b6",
+                    "secondary": "#006e2a",
+                    "on-tertiary-container": "#ffdfbe",
+                    "on-background": "#131b2e",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "primary-container": "#0052ff",
+                    "tertiary": "#6f4500",
+                    "primary": "#003ec7",
+                    "on-surface": "#131b2e",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#b7c4ff",
+                    "tertiary-container": "#905a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px",
+                    "2xl": "1rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "margin-mobile": "16px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-lg-mobile": [
+                            "Montserrat"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "48px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .shadow-ambient {
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px -10px rgba(0,0,0,0.06);
+        }
+        
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+        
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 backdrop-blur-xl dark:bg-background/80 shadow-sm fixed top-0 w-full z-50 transition-all duration-300 ease-in-out">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">Growth Partner</a>
+<div class="hidden md:flex space-x-gutter items-center font-body-md text-body-md font-medium">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="portfolio.html">Portfolio</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="packages.html">Packages</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<div class="hidden md:block">
+<a class="bg-secondary text-on-secondary hover:bg-secondary/90 px-6 py-3 rounded-full font-label-md text-label-md transition-colors shadow-ambient hover-lift inline-flex items-center justify-center min-h-[48px]" href="contact.html">
+                    Request Audit
+                </a>
+</div>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="space-y-6 pr-0 lg:pr-12">
+<span class="text-primary font-label-md text-label-md uppercase tracking-wider">Who We Are</span>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+                        Your Strategic Growth Engine in Deoghar.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Growth Partner is a full-service digital growth agency based in Deoghar, Jharkhand. We blend institutional strategy with local market understanding to deliver scalable digital solutions for modern businesses.
+                    </p>
+</div>
+<div class="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-ambient">
+<img class="w-full h-full object-cover" data-alt="A modern, brightly lit office space featuring sleek minimalist furniture, large windows letting in natural light, and a diverse team of professionals collaborating around a large glass table. The atmosphere is energetic and professional, captured in a clean, high-contrast corporate modern style with a cool blue and crisp white palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRmb_LYCjV7zNA0txKD2q40yNVTgP4psBdUFaD7UN1XWasTG1Y80G3GySSx85wOBbdGgCA7dLYn3KkJP84Vlw8hLfm2Dd2c2YoeKAByVst0FGBX-g3-Ph48aBBU7I5r1zbzSESzwT6Jk-OM77tVYpEtldcEkuxmIchMOuiX21Zlj8i5BW0h9wuL9uluXPcn5W1pZceoSAH7iVjGrcvn223sDgJD1RwyYcgSIm5Ol1QNM9d-P9X75XA3Q"/>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-section-gap bg-surface-container-low rounded-3xl p-8 md:p-16">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-primary font-label-md text-label-md uppercase tracking-wider block mb-4">The Advantage</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Why Choose Us?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface rounded-2xl p-8 shadow-ambient hover-lift flex flex-col h-full border border-surface-container-high">
+<div class="bg-primary-container/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<h3 class="font-headline-md text-[20px] leading-[28px] text-on-surface mb-3">Local Expertise</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Deep understanding of the local market dynamics in Deoghar and surrounding regions, ensuring campaigns resonate perfectly.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-2xl p-8 shadow-ambient hover-lift flex flex-col h-full border border-surface-container-high lg:translate-y-8">
+<div class="bg-primary-container/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="all_inclusive" style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+</div>
+<h3 class="font-headline-md text-[20px] leading-[28px] text-on-surface mb-3">End-to-End</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">From initial strategy to execution, optimization, and reporting, we handle every aspect of your digital presence.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-2xl p-8 shadow-ambient hover-lift flex flex-col h-full border border-surface-container-high">
+<div class="bg-primary-container/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="visibility" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<h3 class="font-headline-md text-[20px] leading-[28px] text-on-surface mb-3">Transparent Pricing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">Clear, upfront costs with no hidden fees. You know exactly what you're paying for and the value it brings.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-2xl p-8 shadow-ambient hover-lift flex flex-col h-full border border-surface-container-high lg:translate-y-8">
+<div class="bg-primary-container/20 w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="support_agent" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+</div>
+<h3 class="font-headline-md text-[20px] leading-[28px] text-on-surface mb-3">Dedicated Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">A direct line to strategic experts who prioritize your success and are responsive to your evolving needs.</p>
+</div>
+</div>
+</section>
+<!-- Mission Statement -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-section-gap">
+<div class="bg-primary text-on-primary rounded-3xl p-8 md:p-16 lg:p-24 relative overflow-hidden shadow-ambient">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<span class="font-label-md text-label-md text-on-primary/80 uppercase tracking-wider block mb-6">Our Mission</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8 leading-tight">
+                        To architect scalable digital ecosystems that drive measurable growth and institutionalize success for ambitious brands.
+                    </h2>
+<div class="h-1 w-20 bg-secondary rounded-full"></div>
+</div>
+</div>
+</section><!-- Industries Section from SCREEN_6 -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-section-gap" id="industries">
+<header class="pb-16 text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-6 animate-fade-up">
+            Industries We Accelerate
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto animate-fade-up">
+            We engineer tailored digital growth strategies for established businesses and ambitious startups across diverse sectors.
+        </p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Coaching -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASp843-jJ6nvTiVP0ski9724A3KVYoNEj7gmmyZU2LxPRza9yW8_7sqqaBrVaR-M5z3PqznG5f8vtUrxPJk5UNJCe8HwqqdZmPlwW9qm1kvFumuvujqhMU-q-uQcs5a58YdmQMhlEi80IlR3liufA1MiB-ncPcLUVbg0yClpFQq1X-tTb_Ezb1_fVReMe8X6yIIWgwJjBneoDaOU6K_tGdNuODTCpUrgab1mr9nlq4xKMOxm9mJNJEng"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">psychology</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Coaching</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Elevate your personal brand and scale your consulting practice with targeted digital authority building.
+                </p>
+</div>
+</article>
+<!-- Card 2: Schools -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65Afe_WFrwyHATyN9Jbih1z27AehykSiX05EqXcjT2fpft5pwT0G5tDnRRtadbEQlXj3LZYH51zOL2oZrJDMoaLnwgluh00LUcqIYIENbNiPIOFMBRyRe82Q-rgqDHCsNXsxP43yr8QfXzkzwC8hrVtwO1OoABdiujXq0E3hJ1r8o1jf76bltzMEooIXRymE1PsroXD280tHzAtJYHwl5rGVMEJNYLtgnt3_tY-aahJShwEEVBpgaAg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">school</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Schools</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Drive admissions and enhance institutional reputation through data-driven enrollment marketing.
+                </p>
+</div>
+</article>
+<!-- Card 3: Restaurants -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA05RcgGL52oih5i3YA7S1i4XdpYnxk83dCXXAvxGCEJ38Y9cPP_1tJval3R6qruwpixfVqmaddUeTHhN3CpkAlhLjyMt0zrjh9CSZ__XcW8F-qTCQuhLA9yKWpbe9oP2m1Z6CLhFajIs27QRNwtf07qpH1fCl5FUrEcJH-i09lAGno2AXcOT_hXzm489-ivoJ4qRCNHYS4OKkLJtybdPEfLSJpBoJY8xIreLYWN7mKA7gEO8oOR-tRQQ"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">restaurant</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Restaurants</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Increase foot traffic and reservations with localized SEO and engaging visual storytelling.
+                </p>
+</div>
+</article>
+<!-- Card 4: Hotels -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm2y4YmLEmWCrJpPid-5DHHEtq2M_9ZcpqfRGU90SEv0G37paSsssankVJjC1f0dBI5gciqOq74kZtm3PEFpaoln1qOAd0hEb4q5oBdICiQFJZcwmpP29YmRgH7leDUY7nKJmq4oML5d-ie4Vm27F5qr_SdbiSu18oN__yVueLQ9Rbxur_TTKcDwP5YMLNuZrH5milCBpGRQS8k2XQn7WAX6miJrNvZhPfI1f2IdtLkqLo-31wCMuOMg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">hotel</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Hotels</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Maximize direct bookings and RevPAR with sophisticated digital acquisition campaigns.
+                </p>
+</div>
+</article>
+<!-- Card 5: Hospitals -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8uO5LqeVOZti7RKL8u-04ziorjYuiR-uWXmaqeisqs11zjH68HIST8uX-bWbplJ9y8M8h8tRvBUf8iSnTejegwWH_0JVAiFyHMy1Ft_G1UNdJX3KI9FWL-hlDdRBCT9n6iGgrAertMFQO8pGJS7KvFW1u7Rir4WaRkT-db9A-64KW6xZ4JllyDrhzxgobckh465a89LY-PbzQsZgrp9iNfXYmRjEPT4XYcbYWJQxipVi2Ul2SZTWrWw"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">local_hospital</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Hospitals</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Build patient trust and highlight specialized care through compliant healthcare marketing.
+                </p>
+</div>
+</article>
+<!-- Card 6: Clinics & Salons -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnHja0Ybj4jrqP_lsmkEFjveDMrxPvb2f2HXzgWMUJrVkFirhWYHkBaE6fCt3et5YhLWOpd0I-aADtqTs5ceVq7lGYyCD9AtImTfzLKKZg8-uAGc_E5a08GRGR8Gd88SPoPId5IXDznLur5OVUAUtFB4i2Fq-jr3l6HKhQREzEm01_ywREqiD3EkM8DHs5sVOs-Ri2HLoyzVtowiFh0ZFZQITGZn_pSpknY2qLZpusoXDgYpyUI777Xg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">spa</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Clinics &amp; Salons</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Drive appointment volume and client retention for aesthetic, dental, and wellness centers.
+                </p>
+</div>
+</article>
+<!-- Card 7: Real Estate -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full hover-lift animate-fade-up">
+<div class="h-48 relative bg-surface-container rounded-t-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2iO4k51nyw739PnlIsou68UdEa3eW_RFjBYz5oWqoItt4evyS7Sy5vh7lOxtE9rO_90VQCMwPZNafQ-qBZ6k3CntG_gP9PeIaqN-tgI0Xk2rbTim4-JPJsFjiS8UGLxweRehNSEuyKJRhKk7a2tgpbP61GRvOxEKiLzuWRX1TR_9nR6Ys8kZ0mXGLbppiuvJbk_8XVHm6C03Nl3kBSYK4Ktw-8V5DEHsvYxNC9IkYoK05cwbCun8wrg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg">apartment</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Real Estate</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
+                    Generate high-intent leads and showcase properties with immersive digital experiences.
+                </p>
+</div>
+</article>
+<!-- Card 8: Startups -->
+<article class="bg-surface-container-lowest rounded-xl shadow-ambient border border-surface-container-high flex flex-col h-full md:col-span-2 lg:col-span-2 hover-lift animate-fade-up">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 h-48 md:h-auto relative bg-surface-container rounded-t-xl md:rounded-tr-none md:rounded-bl-xl overflow-hidden">
+<img class="object-cover w-full h-full absolute inset-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4T178blTD1nLadDDK4Hufkr9bszNZiaKa_ev3N0nALr9XjtcmaG6BIx8eTlcCt1TYVaQ1YNbtD8q0-v8LIA-PTVcppGQg_nouN5Saf9VHcLLU6n_e5E6xbeFYvzuhFF_bgKVBfegicUf5LJ-50ysfraA0HyA2mN_s1uQRHP-RVmy6Qu_wlPNnNCsqCBwpvs7Y00Baucr2e15hYNyf920HcDHQYIs_cMCUpFK9zwRs00slHYWxJHal3A"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-center md:w-1/2">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary bg-secondary/10 p-2 rounded-lg">rocket_launch</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Startups</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        High-velocity growth frameworks designed for disruption. We build scalable go-to-market engines for early-stage and venture-backed companies.
+                    </p>
+<div>
+<button class="text-primary font-label-md text-label-md flex items-center gap-2 hover:text-secondary transition-colors">
+                            View Startup Framework <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-3xl mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Clear answers to common inquiries.</p>
+</div>
+<div class="space-y-4" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="accordion-item bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:bg-surface-container-low transition-colors">
+<span class="font-headline-md text-[18px] leading-[24px] text-on-surface pr-4">What types of businesses do you work with?</span>
+<span class="material-symbols-outlined accordion-icon text-outline" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest">
+<div class="px-6 pb-5 pt-2 font-body-md text-body-md text-on-surface-variant border-t border-surface-container-high mx-6 mt-2">
+                            We partner with established local enterprises looking to digitize their operations and ambitious startups seeking rapid market penetration. Our strategies are adaptable across various industries including retail, real estate, professional services, and healthcare.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="accordion-item bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:bg-surface-container-low transition-colors">
+<span class="font-headline-md text-[18px] leading-[24px] text-on-surface pr-4">What is the typical timeline for a new website?</span>
+<span class="material-symbols-outlined accordion-icon text-outline" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest">
+<div class="px-6 pb-5 pt-2 font-body-md text-body-md text-on-surface-variant border-t border-surface-container-high mx-6 mt-2">
+                            A standard corporate website typically takes 4-6 weeks from initial discovery to final launch. More complex platforms with custom integrations or e-commerce capabilities can take 8-12 weeks. We provide a detailed timeline during the proposal phase.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="accordion-item bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:bg-surface-container-low transition-colors">
+<span class="font-headline-md text-[18px] leading-[24px] text-on-surface pr-4">Do you provide hosting and domain services?</span>
+<span class="material-symbols-outlined accordion-icon text-outline" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest">
+<div class="px-6 pb-5 pt-2 font-body-md text-body-md text-on-surface-variant border-t border-surface-container-high mx-6 mt-2">
+                            Yes, we offer fully managed, high-performance hosting solutions optimized for security and speed. We can also assist with domain registration and management as part of our comprehensive service packages.
+                        </div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="accordion-item bg-surface border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:bg-surface-container-low transition-colors">
+<span class="font-headline-md text-[18px] leading-[24px] text-on-surface pr-4">How do you measure campaign success?</span>
+<span class="material-symbols-outlined accordion-icon text-outline" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content bg-surface-container-lowest">
+<div class="px-6 pb-5 pt-2 font-body-md text-body-md text-on-surface-variant border-t border-surface-container-high mx-6 mt-2">
+                            We utilize strict KPIs tailored to your specific business goals, ranging from lead acquisition costs (CPA) and conversion rates to overall return on ad spend (ROAS). You receive transparent, monthly data reports detailing performance.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant w-full py-section-gap opacity-100 hover:opacity-80 transition-opacity">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed">Growth Partner</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant">
+                    Architecting scalable digital ecosystems for ambitious brands.
+                </p>
+<div class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant mt-8">
+                    © 2024 Growth Partner. All rights reserved. Deoghar, Jharkhand.
+                </div>
+</div>
+<div class="col-span-1 flex flex-col space-y-4">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Company</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-primary font-bold hover:text-secondary transition-colors" href="about.html">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="services.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="portfolio.html">Portfolio</a>
+</div>
+<div class="col-span-1 flex flex-col space-y-4">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Solutions</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="packages.html">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="about.html#industries">Industries</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="col-span-1 flex flex-col space-y-4">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Legal &amp; Social</span>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors" href="#">Terms</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-secondary transition-colors inline-flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera" style="font-size: 20px;">photo_camera</span>
+                    Instagram
+                </a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Accordion Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const button = item.querySelector('button');
+                button.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all
+                    accordionItems.forEach(acc => {
+                        acc.classList.remove('active');
+                    });
+                    
+                    // Open clicked if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

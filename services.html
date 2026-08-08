@@ -463,38 +463,57 @@ Growth Partner
 </div>
 </footer>
 <script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
-    const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
-    
-    let isMenuOpen = false;
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        
+        let isMenuOpen = false;
 
-    if (mobileMenuBtn && mobileNavOverlay) {
-        mobileMenuBtn.addEventListener('click', () => {
-            isMenuOpen = !isMenuOpen;
-            if (isMenuOpen) {
-                mobileNavOverlay.classList.remove('translate-x-full');
-                mobileMenuIcon.textContent = 'close';
-                mobileMenuIcon.setAttribute('data-icon', 'close');
-                document.body.style.overflow = 'hidden';
-            } else {
-                mobileNavOverlay.classList.add('translate-x-full');
-                mobileMenuIcon.textContent = 'menu';
-                mobileMenuIcon.setAttribute('data-icon', 'menu');
-                document.body.style.overflow = '';
-            }
-        });
-
-        const mobileLinks = mobileNavOverlay.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                isMenuOpen = false;
-                mobileNavOverlay.classList.add('translate-x-full');
-                mobileMenuIcon.textContent = 'menu';
-                mobileMenuIcon.setAttribute('data-icon', 'menu');
-                document.body.style.overflow = '';
+        if (mobileMenuBtn && mobileNavOverlay) {
+            mobileMenuBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileNavOverlay.classList.remove('hidden');
+                    requestAnimationFrame(() => {
+                        mobileNavOverlay.classList.remove('translate-x-full');
+                    });
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'close';
+                        mobileMenuIcon.setAttribute('data-icon', 'close');
+                    }
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileNavOverlay.classList.add('translate-x-full');
+                    setTimeout(() => {
+                        if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                    }, 300);
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'menu';
+                        mobileMenuIcon.setAttribute('data-icon', 'menu');
+                    }
+                    document.body.style.overflow = '';
+                }
             });
-        });
-    }
+
+            const mobileLinks = mobileNavOverlay.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    isMenuOpen = false;
+                    mobileNavOverlay.classList.add('translate-x-full');
+                    setTimeout(() => {
+                        if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                    }, 300);
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'menu';
+                        mobileMenuIcon.setAttribute('data-icon', 'menu');
+                    }
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    });
 </script>
 </body></html>

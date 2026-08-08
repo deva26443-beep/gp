@@ -116,8 +116,11 @@
 <body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-all duration-300 ease-in-out border-none">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
-<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight" href="#">Growth Partner</a>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20 relative z-50">
+<a class="font-display-lg text-headline-md font-bold text-primary tracking-tight flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+Growth Partner
+</a>
 <nav class="hidden md:flex items-center gap-8">
 <a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
 <a class="font-body-md text-body-md font-medium text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">About</a>
@@ -129,21 +132,34 @@
 <button class="hidden md:flex bg-secondary text-on-secondary hover:bg-secondary/90 h-[48px] px-6 rounded-full font-label-md text-label-md items-center justify-center transition-all shadow-sm" onclick="window.location='contact.html'">
                 Request Audit
             </button>
-<!-- Mobile Menu Icon (Visual Only) -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-[32px]">menu</span>
+<button class="md:hidden text-on-surface-variant p-2 hover:text-primary transition-colors focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+<span class="material-symbols-outlined transition-transform duration-300 text-3xl" data-icon="menu" id="mobile-menu-icon">menu</span>
 </button>
 </div>
+<!-- Mobile Nav Overlay -->
+<div class="fixed inset-0 bg-surface/95 backdrop-blur-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center px-6 py-12 hidden min-h-screen" id="mobile-nav-overlay">
+<div class="flex flex-col gap-6 w-full max-w-sm text-center">
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="index.html">Home</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="about.html">About</a>
+<a class="font-display-lg text-headline-md font-bold text-primary py-2 text-2xl" href="services.html">Services</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="portfolio.html">Portfolio</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="packages.html">Packages</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="contact.html">Contact</a>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 w-full flex justify-center">
+<a class="inline-flex items-center justify-center bg-secondary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:opacity-90 transition-colors h-14 w-full text-lg font-bold shadow-md" href="contact.html">Request Audit</a>
+</div>
+</div>
+</div>
 </header>
-<main class="pt-[140px]">
+<main class="pt-24 md:pt-[140px]">
 <!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-section-gap relative overflow-hidden py-section-gap"><div class="absolute inset-0 z-0">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative overflow-hidden py-12 md:py-section-gap rounded-2xl md:rounded-none mb-6 md:mb-0"><div class="absolute inset-0 z-0">
 <img alt="Business Growth Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLujx6NI3UO1RQGqC2oB0LwV-5YxNO1B_cnIRf8zSNnZaGQX_JbG-J3O546A5nXRT2KnNARIL8edl8fUBNxqZkDTgwWWlIEOF4merVjpZr2g9-YTXgxiaLnEGb83RYBLVIPuMbJD4FqBUDGnBIQA-o8CbR42axJP_XFFFSdp2t_rk1ARBTtQwY3_woytt67S9xgR9zmsvOoN5JiamH7qC_rhrBbX2HbaV-dktyyZPBmG-eSCic93PSzNG5Q"/>
 <div class="absolute inset-0 bg-black/60 z-10"></div>
 </div>
-<div class="relative z-10 max-w-3xl">
-<h1 class="font-display-lg text-display-lg text-white mb-6">Comprehensive Growth Solutions.</h1>
-<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">
+<div class="relative z-10 max-w-3xl p-4 sm:p-6 md:p-0">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-white mb-4 md:mb-6">Comprehensive Growth Solutions.</h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-white/90 max-w-2xl">
     We deliver high-impact digital strategies designed for scalability. From architecture to acquisition, our integrated services build robust systems for established businesses and high-velocity startups.
   </p>
 </div></section>
@@ -446,4 +462,39 @@
 </div>
 </div>
 </footer>
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+    const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+    
+    let isMenuOpen = false;
+
+    if (mobileMenuBtn && mobileNavOverlay) {
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileNavOverlay.classList.remove('translate-x-full');
+                mobileMenuIcon.textContent = 'close';
+                mobileMenuIcon.setAttribute('data-icon', 'close');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileNavOverlay.classList.add('translate-x-full');
+                mobileMenuIcon.textContent = 'menu';
+                mobileMenuIcon.setAttribute('data-icon', 'menu');
+                document.body.style.overflow = '';
+            }
+        });
+
+        const mobileLinks = mobileNavOverlay.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileNavOverlay.classList.add('translate-x-full');
+                mobileMenuIcon.textContent = 'menu';
+                mobileMenuIcon.setAttribute('data-icon', 'menu');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+</script>
 </body></html>

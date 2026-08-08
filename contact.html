@@ -159,8 +159,11 @@
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
 <!-- Top Navigation Bar -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-all duration-300 ease-in-out">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
-<div class="font-display-lg text-headline-md font-bold text-primary">Growth Partner</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20 relative z-50">
+<a class="font-display-lg text-headline-md font-bold text-primary flex items-center gap-2 tracking-tight" href="index.html">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+Growth Partner
+</a>
 <nav class="hidden md:flex space-x-6">
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md font-medium" href="index.html">Home</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md font-medium" href="about.html">About</a>
@@ -169,55 +172,81 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md font-medium" href="packages.html">Packages</a>
 <a class="text-primary font-bold border-b-2 border-primary transition-colors duration-300 font-body-md text-body-md" href="contact.html">Contact</a>
 </nav>
-<button class="hidden md:block bg-secondary text-on-secondary px-6 py-3 font-label-md text-label-md hover:opacity-90 transition-opacity rounded-full" onclick="window.location='contact.html'">Request Audit</button>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
+<button class="hidden md:block bg-secondary text-on-secondary px-6 py-3 font-label-md text-label-md hover:opacity-90 transition-opacity rounded-full min-h-[44px]" onclick="window.location='contact.html'">Request Audit</button>
+<button class="md:hidden text-on-surface-variant p-2 hover:text-primary transition-colors focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+<span class="material-symbols-outlined transition-transform duration-300 text-3xl" data-icon="menu" id="mobile-menu-icon">menu</span>
 </button>
 </div>
+<!-- Mobile Nav Overlay -->
+<div class="fixed inset-0 bg-surface/95 backdrop-blur-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center px-6 py-12 hidden min-h-screen" id="mobile-nav-overlay">
+<div class="flex flex-col gap-6 w-full max-w-sm text-center">
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="index.html">Home</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="about.html">About</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="services.html">Services</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="portfolio.html">Portfolio</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="packages.html">Packages</a>
+<a class="font-display-lg text-headline-md font-bold text-primary py-2 text-2xl" href="contact.html">Contact</a>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 w-full flex justify-center">
+<a class="inline-flex items-center justify-center bg-secondary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:opacity-90 transition-colors h-14 w-full text-lg font-bold shadow-md" href="contact.html">Request Audit</a>
+</div>
+</div>
+</div>
 </header>
-<main class="flex-grow pt-32 pb-section-gap">
+<main class="flex-grow pt-24 md:pt-32 pb-section-gap">
 <!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-20 text-center">
-<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Ready to Grow Your Business?</h1>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-12 md:mb-20 text-center">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-4 md:mb-6">Ready to Grow Your Business?</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Let's build something amazing together! We are here to listen, strategize, and execute for your success.</p>
 </section>
 <!-- Main Content Area: Bento Grid -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter mb-20">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter mb-12 md:mb-20">
 <!-- Contact Info Card (Spans 4 columns on desktop) -->
-<div class="md:col-span-4 bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] p-8 flex flex-col justify-between">
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_-15px_rgba(0,0,0,0.04)] p-6 md:p-8 flex flex-col justify-between">
 <div>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Get in Touch</h2>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 md:mb-8">Get in Touch</h2>
 <div class="flex items-start mb-6">
 <span class="material-symbols-outlined text-primary mr-4 mt-1" data-icon="call">call</span>
 <div>
 <p class="font-label-md text-label-md text-on-surface-variant mb-1">Phone / WhatsApp</p>
-<p class="font-body-md text-body-md text-on-surface">9142705096</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors font-semibold" href="tel:+918252277484">+91 82522 77484</a>
 </div>
 </div>
 <div class="flex items-start mb-6">
 <span class="material-symbols-outlined text-primary mr-4 mt-1" data-icon="mail">mail</span>
 <div>
 <p class="font-label-md text-label-md text-on-surface-variant mb-1">Email</p>
-<p class="font-body-md text-body-md text-on-surface">devstudent1984@gmail.com</p>
+<a class="font-body-md text-body-md text-on-surface hover:text-primary transition-colors font-semibold" href="mailto:devstudent1984@gmail.com">devstudent1984@gmail.com</a>
 </div>
 </div>
-<div class="flex items-start">
+<div class="flex items-start mb-6">
 <span class="material-symbols-outlined text-primary mr-4 mt-1" data-icon="location_on">location_on</span>
 <div>
-<p class="font-label-md text-label-md text-on-surface-variant mb-1">Office</p>
-<p class="font-body-md text-body-md text-on-surface">Deoghar, Jharkhand</p>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Office Address</p>
+<p class="font-body-md text-body-md text-on-surface">Deoghar, Jharkhand, India - 814112</p>
 </div>
+</div>
+</div>
+<!-- Social Links in Card -->
+<div class="pt-6 border-t border-outline-variant/30">
+<p class="font-label-md text-label-md text-on-surface-variant mb-4">Follow Us</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="public">public</span>
+</a>
 </div>
 </div>
 </div>
 <!-- Free Offer Card (Spans 8 columns on desktop) -->
-<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row items-center relative overflow-hidden">
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center relative overflow-hidden">
 <div class="absolute inset-0 z-0 opacity-10">
 <img class="w-full h-full object-cover" data-alt="Abstract geometric background in light corporate style, representing growth and strategic planning with soft blue gradients and subtle chart lines. Professional and clean corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCstyEvlSU0sspmyhK1wKxlPZELIKi7FGjHGAPQuW1I-f85cv-qZJXYIvCwagJ8cM5AROm2rmkJoZvnNsU3Fv8_PbbzO-hLHKsGHTFhdzGJNs1yIwkccTv7YkGeXHdrnSjX6o4jie2KgO0naU-QgQWzrf0bgucq42u8o-JcpRLTwdSli6tunLtUMrms95a0WchM8zhqU81AgFuGn-hX0JLGMRCE3Ju8UjDnsjUffSoTjvCuIe45HM7PUw">
 </div>
-<div class="z-10 md:w-2/3 pr-0 md:pr-8 mb-8 md:mb-0">
+<div class="z-10 w-full md:w-2/3 pr-0 md:pr-8 mb-6 md:mb-0">
 <span class="inline-block bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1 rounded-full mb-4">Limited Offer</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Claim Your Free Consultation</h2>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Claim Your Free Consultation</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Unlock your business potential with a complimentary session. We will dive deep into your current strategy.</p>
 <ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
 <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2" data-icon="check_circle">check_circle</span> Comprehensive Website Audit</li>
@@ -225,17 +254,17 @@
 <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2" data-icon="check_circle">check_circle</span> Competitor Analysis Insight</li>
 </ul>
 </div>
-<div class="z-10 md:w-1/3 flex justify-center">
-<div class="bg-surface-container-lowest rounded-full w-40 h-40 flex items-center justify-center shadow-md">
-<span class="material-symbols-outlined text-primary" data-icon="card_giftcard" style="font-size: 64px;">card_giftcard</span>
+<div class="z-10 w-full md:w-1/3 flex justify-center">
+<div class="bg-surface-container-lowest rounded-full w-32 h-32 md:w-40 md:h-40 flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary" data-icon="card_giftcard" style="font-size: 56px;">card_giftcard</span>
 </div>
 </div>
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center bg-primary-fixed rounded-xl py-16 relative overflow-hidden"><div class="relative z-10">
-  <h2 class="font-headline-lg text-headline-lg text-on-primary-fixed mb-4">Find the biggest digital growth gap...</h2>
-  <p class="font-body-lg text-body-lg text-on-primary-fixed-variant max-w-2xl mx-auto mb-12">Stop guessing what's holding your business back. Let our experts analyze your digital presence and show you exactly where to focus your efforts for maximum ROI.</p>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center bg-primary-fixed rounded-xl py-12 md:py-16 relative overflow-hidden"><div class="relative z-10">
+  <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary-fixed mb-4">Find the biggest digital growth gap...</h2>
+  <p class="font-body-lg text-body-lg text-on-primary-fixed-variant max-w-2xl mx-auto mb-8 md:mb-12">Stop guessing what's holding your business back. Let our experts analyze your digital presence and show you exactly where to focus your efforts for maximum ROI.</p>
   
   <form id="contact-form" action="https://formsubmit.co/ajax/devstudent1984@gmail.com" method="POST" class="max-w-2xl mx-auto text-left">
     <!-- FormSubmit settings -->
@@ -243,25 +272,25 @@
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8">
       <div class="flex flex-col">
         <label class="font-label-md text-label-md text-on-primary-fixed mb-2">Full Name</label>
-        <input type="text" name="Full Name" placeholder="John Doe" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-headline-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+        <input type="text" name="Full Name" placeholder="John Doe" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors min-h-[48px]">
       </div>
       <div class="flex flex-col">
         <label class="font-label-md text-label-md text-on-primary-fixed mb-2">Business Name</label>
-        <input type="text" name="Business Name" placeholder="Growth Co." required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-headline-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+        <input type="text" name="Business Name" placeholder="Growth Co." required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors min-h-[48px]">
       </div>
       <div class="flex flex-col">
         <label class="font-label-md text-label-md text-on-primary-fixed mb-2">Mobile Number</label>
-        <input type="tel" name="Mobile Number" placeholder="+91 00000 00000" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-headline-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+        <input type="tel" name="Mobile Number" placeholder="+91 00000 00000" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors min-h-[48px]">
       </div>
       <div class="flex flex-col">
         <label class="font-label-md text-label-md text-on-primary-fixed mb-2">Email Address</label>
-        <input type="email" name="Email Address" placeholder="john@example.com" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-headline-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+        <input type="email" name="Email Address" placeholder="john@example.com" required class="bg-surface-container-lowest border border-outline-variant rounded-lg p-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors min-h-[48px]">
       </div>
     </div>
-    <button type="submit" id="submit-btn" class="w-full bg-[#F59E0B] text-on-secondary px-8 py-4 rounded-lg font-label-md text-label-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">Request My Free Audit</button>
+    <button type="submit" id="submit-btn" class="w-full bg-[#F59E0B] text-on-secondary px-8 py-4 rounded-lg font-label-md text-label-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 min-h-[52px]">Request My Free Audit</button>
     <p id="form-status" class="mt-4 text-center font-bold hidden"></p>
   </form>
   <script>
@@ -298,41 +327,95 @@
 </div></section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<footer class="w-full py-12 md:py-section-gap bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-gutter">
 <div>
-<div class="font-display-lg text-headline-md font-bold text-primary mb-4">Growth Partner</div>
+<div class="font-display-lg text-headline-md font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+Growth Partner
+</div>
 <p class="font-body-md text-body-md text-on-surface-variant">© 2024 Growth Partner. All rights reserved. Deoghar, Jharkhand.</p>
 </div>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface mb-4">Links</h4>
 <ul class="space-y-2">
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="index.html">Home</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="about.html">About</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="services.html">Services</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="index.html">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="about.html">About</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="services.html">Services</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface mb-4">More</h4>
 <ul class="space-y-2">
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="portfolio.html">Portfolio</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="packages.html">Packages</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="about.html#industries">Industries</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="portfolio.html">Portfolio</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="packages.html">Packages</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="about.html#industries">Industries</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-md text-label-md text-on-surface mb-4">Legal</h4>
 <ul class="space-y-2">
-<li class=""><a class="text-primary font-bold hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="contact.html">Contact</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="#">Privacy Policy</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="#">Terms</a></li>
-<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80" href="#">Instagram</a></li>
+<li class=""><a class="text-primary font-bold hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="contact.html">Contact</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="#">Terms</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md opacity-100 hover:opacity-80 py-1 inline-block" href="#">Instagram</a></li>
 </ul>
 </div>
 </div>
 </footer>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        
+        let isMenuOpen = false;
 
+        if (mobileMenuBtn && mobileNavOverlay) {
+            mobileMenuBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileNavOverlay.classList.remove('hidden');
+                    requestAnimationFrame(() => {
+                        mobileNavOverlay.classList.remove('translate-x-full');
+                    });
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'close';
+                        mobileMenuIcon.setAttribute('data-icon', 'close');
+                    }
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileNavOverlay.classList.add('translate-x-full');
+                    setTimeout(() => {
+                        if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                    }, 300);
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'menu';
+                        mobileMenuIcon.setAttribute('data-icon', 'menu');
+                    }
+                    document.body.style.overflow = '';
+                }
+            });
 
-
+            const mobileLinks = mobileNavOverlay.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    isMenuOpen = false;
+                    mobileNavOverlay.classList.add('translate-x-full');
+                    setTimeout(() => {
+                        if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                    }, 300);
+                    if (mobileMenuIcon) {
+                        mobileMenuIcon.textContent = 'menu';
+                        mobileMenuIcon.setAttribute('data-icon', 'menu');
+                    }
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    });
+</script>
 </body></html>

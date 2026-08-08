@@ -200,8 +200,11 @@
 <body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
 <nav class="bg-surface/80 backdrop-blur-xl dark:bg-background/80 shadow-sm fixed top-0 w-full z-50 transition-all duration-300 ease-in-out">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
-<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">Growth Partner</a>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20 relative z-50">
+<a class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined" data-icon="trending_up" style='font-variation-settings: "FILL" 1;'>trending_up</span>
+Growth Partner
+</a>
 <div class="hidden md:flex space-x-gutter items-center font-body-md text-body-md font-medium">
 <a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
 <a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
@@ -215,34 +218,48 @@
                     Request Audit
                 </a>
 </div>
-<button class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
+<button class="md:hidden text-on-surface-variant p-2 hover:text-primary transition-colors focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+<span class="material-symbols-outlined transition-transform duration-300 text-3xl" data-icon="menu" id="mobile-menu-icon">menu</span>
 </button>
+</div>
+<!-- Mobile Nav Overlay -->
+<div class="fixed inset-0 bg-surface/95 backdrop-blur-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center px-6 py-12 hidden min-h-screen" id="mobile-nav-overlay">
+<div class="flex flex-col gap-6 w-full max-w-sm text-center">
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="index.html">Home</a>
+<a class="font-display-lg text-headline-md font-bold text-primary py-2 text-2xl" href="about.html">About</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="services.html">Services</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="portfolio.html">Portfolio</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="packages.html">Packages</a>
+<a class="font-display-lg text-headline-md font-medium text-on-surface-variant hover:text-primary transition-colors py-2 text-2xl" href="contact.html">Contact</a>
+<div class="pt-6 mt-4 border-t border-outline-variant/30 w-full flex justify-center">
+<a class="inline-flex items-center justify-center bg-secondary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:opacity-90 transition-colors h-14 w-full text-lg font-bold shadow-md" href="contact.html">Request Audit</a>
+</div>
+</div>
 </div>
 </nav>
 <!-- Main Content -->
-<main class="flex-grow pt-32 pb-section-gap">
+<main class="flex-grow pt-24 md:pt-32 pb-12 md:pb-section-gap">
 <!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-section-gap">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
-<div class="space-y-6 pr-0 lg:pr-12">
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-12 md:mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-gutter items-center">
+<div class="space-y-4 md:space-y-6 pr-0 lg:pr-12">
 <span class="text-primary font-label-md text-label-md uppercase tracking-wider">Who We Are</span>
 <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
                         Your Strategic Growth Engine in Deoghar.
                     </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant">
                         Growth Partner is a full-service digital growth agency based in Deoghar, Jharkhand. We blend institutional strategy with local market understanding to deliver scalable digital solutions for modern businesses.
                     </p>
 </div>
-<div class="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-ambient">
+<div class="relative h-[280px] sm:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-ambient">
 <img class="w-full h-full object-cover" data-alt="A modern, brightly lit office space featuring sleek minimalist furniture, large windows letting in natural light, and a diverse team of professionals collaborating around a large glass table. The atmosphere is energetic and professional, captured in a clean, high-contrast corporate modern style with a cool blue and crisp white palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRmb_LYCjV7zNA0txKD2q40yNVTgP4psBdUFaD7UN1XWasTG1Y80G3GySSx85wOBbdGgCA7dLYn3KkJP84Vlw8hLfm2Dd2c2YoeKAByVst0FGBX-g3-Ph48aBBU7I5r1zbzSESzwT6Jk-OM77tVYpEtldcEkuxmIchMOuiX21Zlj8i5BW0h9wuL9uluXPcn5W1pZceoSAH7iVjGrcvn223sDgJD1RwyYcgSIm5Ol1QNM9d-P9X75XA3Q"/>
 </div>
 </div>
 </section>
 <!-- Why Choose Us (Bento Grid) -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-section-gap bg-surface-container-low rounded-3xl p-8 md:p-16">
-<div class="text-center max-w-3xl mx-auto mb-16">
-<span class="text-primary font-label-md text-label-md uppercase tracking-wider block mb-4">The Advantage</span>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mb-12 md:mb-section-gap bg-surface-container-low rounded-3xl p-6 sm:p-8 md:p-16">
+<div class="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+<span class="text-primary font-label-md text-label-md uppercase tracking-wider block mb-2 sm:mb-4">The Advantage</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Why Choose Us?</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -534,20 +551,74 @@
             
             accordionItems.forEach(item => {
                 const button = item.querySelector('button');
-                button.addEventListener('click', () => {
-                    const isActive = item.classList.contains('active');
-                    
-                    // Close all
-                    accordionItems.forEach(acc => {
-                        acc.classList.remove('active');
+                if (button) {
+                    button.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        
+                        // Close all
+                        accordionItems.forEach(acc => {
+                            acc.classList.remove('active');
+                        });
+                        
+                        // Open clicked if it wasn't active
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
                     });
-                    
-                    // Open clicked if it wasn't active
-                    if (!isActive) {
-                        item.classList.add('active');
+                }
+            });
+
+            // Mobile Nav Drawer Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+            const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+            
+            let isMenuOpen = false;
+
+            if (mobileMenuBtn && mobileNavOverlay) {
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isMenuOpen = !isMenuOpen;
+                    if (isMenuOpen) {
+                        mobileNavOverlay.classList.remove('hidden');
+                        requestAnimationFrame(() => {
+                            mobileNavOverlay.classList.remove('translate-x-full');
+                        });
+                        if (mobileMenuIcon) {
+                            mobileMenuIcon.textContent = 'close';
+                            mobileMenuIcon.setAttribute('data-icon', 'close');
+                        }
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        mobileNavOverlay.classList.add('translate-x-full');
+                        setTimeout(() => {
+                            if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                        }, 300);
+                        if (mobileMenuIcon) {
+                            mobileMenuIcon.textContent = 'menu';
+                            mobileMenuIcon.setAttribute('data-icon', 'menu');
+                        }
+                        document.body.style.overflow = '';
                     }
                 });
-            });
+
+                const mobileLinks = mobileNavOverlay.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        isMenuOpen = false;
+                        mobileNavOverlay.classList.add('translate-x-full');
+                        setTimeout(() => {
+                            if (!isMenuOpen) mobileNavOverlay.classList.add('hidden');
+                        }, 300);
+                        if (mobileMenuIcon) {
+                            mobileMenuIcon.textContent = 'menu';
+                            mobileMenuIcon.setAttribute('data-icon', 'menu');
+                        }
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
         });
     </script>
 </body></html>
